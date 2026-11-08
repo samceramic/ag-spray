@@ -1,7 +1,7 @@
 {
  "app": "ag-spray",
  "v": 1,
- "updated": "2026-11-08T10:16:27Z",
+ "updated": "2026-11-08T10:18:22Z",
  "contact": {
   "name": "曾義昌",
   "line": "SAMCERAMIC",
@@ -60,9 +60,22 @@
    "created": "2026-11-08",
    "start": "",
    "fn": "ggtWETJnNNjjE7rn.8L/0zCoxe4+Irmaq+lBDoTrmesIW9w=="
+  },
+  {
+   "id": "6d33d59fc5a60be4ecf4487c754c0af18c8627869f77c534a3d615617a8fea87",
+   "salt": "T1OctFyweSDLO60gFNwHbg==",
+   "iter": 210000,
+   "iv": "7bCleTqvBZRghgB7",
+   "wk": "1oTtwn90RucYv0VHVrKMCrxJsCAp8MJ69m85/4HVbXHREUDV432lwIw2xk3O92Ke",
+   "role": "user",
+   "exp": "2027-11-07",
+   "n": "gY7nYYCyoP+OABwA.pD4kRMcswHO+/9AKGeL3TtlGQ0wWESU=",
+   "created": "2026-11-08",
+   "start": "2026-11-08",
+   "fn": "iRcgQ4LjBOrvqDLp.uFtYDiU4y1SUGzB7axKZwPkfYjdrlHx4s5Epucg="
   }
  ],
- "rev": 8,
+ "rev": 9,
  "cwa": "CSNBJAvVJ8CUP76/.OikahvtwENbXhpChfIfoICUyR6v3mqLXsiio41j5Umzl6SEuSo+N4GGP+c87CgKDlkFbQFg7F7w=",
  "sheet": {
   "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
