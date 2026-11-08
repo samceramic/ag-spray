@@ -1,7 +1,7 @@
 {
  "app": "ag-spray",
  "v": 1,
- "updated": "2026-11-08T05:53:34Z",
+ "updated": "2026-11-08T05:53:41Z",
  "contact": {},
  "accounts": [
   {
@@ -17,7 +17,7 @@
    "start": ""
   }
  ],
- "rev": 7,
+ "rev": 8,
  "sheet": {
   "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
   "sk": "2bV3u3g7MfRPB+Xm.7Ydf4ep2FLBT3Qh1mkHk+UL7u6XWWvWBmzzFxFtvIK/AyJNwhYHkELxo2/2kJBmPOmYTPa8J9UsnG5os",
@@ -25,10 +25,10 @@
  },
  "recovery": {
   "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
-  "salt": "BBTjfIJcKK2uzkspjl0PQQ==",
+  "salt": "/QdWhNgtkxLqGWhr2b2aVw==",
   "iter": 100000,
-  "iv": "lF36uWk31A4N1uyb",
-  "wk": "UnS7D+ep5NF3mFLwX0KEmjXOKYMNj8l42+IWR+ta1m+buCI13imBTRQ6avJj2tgs",
+  "iv": "a6cjTE4vf1kFoYMD",
+  "wk": "4FSbY1LqpnKc0r8bfU8Stw6vIrgGQ97fxZfQQsrlVAl6XmAGJ2vFW2tWFglf1TN4",
   "set": "2026-11-08"
  }
 }
