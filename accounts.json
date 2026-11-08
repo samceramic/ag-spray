@@ -1,14 +1,14 @@
 {
  "app": "ag-spray",
  "v": 1,
- "updated": "2026-11-08T03:43:35",
+ "updated": "2026-11-08T03:54:55",
  "accounts": [],
  "recovery": {
   "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
-  "salt": "gZ53Oq1UL4iBRckUS+kJZg==",
+  "salt": "UEpgtkuW2wSAOT/QQkT40w==",
   "iter": 100000,
-  "iv": "XhvnFJRv23kq46Si",
-  "wk": "eWfLWpSv2Y6UxoLHzYTv33cmhVdJzWIKJWEhv426YDDsqq/4YrnKGjVZPDo8Tb1S",
+  "iv": "m+UgvGnUlCyF5a1o",
+  "wk": "OSSG0gyJtRWh3henxHG3QLdkNUvybqv7LNT/4IUrBrLO/tdIZ2WMbMJT6lzfMCZz",
   "set": "2026-11-08"
  }
 }
