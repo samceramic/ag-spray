@@ -1,7 +1,7 @@
 {
  "app": "ag-spray",
  "v": 1,
- "updated": "2026-11-08T03:16:25Z",
+ "updated": "2026-11-08T04:56:00Z",
  "contact": {},
  "accounts": [
   {
@@ -27,31 +27,7 @@
    "n": "bs/hzcQD15Bhqr1d.z+mbl+ljmqbNMLvJesRu8qTBignnkSdrcM35",
    "created": "2026-11-08",
    "start": ""
-  },
-  {
-   "id": "2798790bba9c6abbfae769915a447238094ff61787b7f8d70cb03a4147bdb2b9",
-   "salt": "iPRrhXp5KRVytYeA0SMJtA==",
-   "iter": 210000,
-   "iv": "myAXYXSUhFdS/2Wf",
-   "wk": "miAaHvs/Lj4AQLx/LizekNXdDssFd4sj/CCssKDO4E8s24rfV4udJOOKWO3M6ARi",
-   "role": "user",
-   "exp": "2026-12-31",
-   "n": "jPu3e9TWlvgNtVYH.JGZD/NNIeaRPRsrbbXISCqIbFUL196GBy7MzKAs=",
-   "created": "2026-11-08",
-   "start": ""
-  },
-  {
-   "id": "bf9306df0db7a4b2e38fd353a0fba5b9c8daada160172ebd7566586beae65fd7",
-   "salt": "R/W/Tegd+B2eFm+b8UGRDQ==",
-   "iter": 210000,
-   "iv": "GquMHgtWGTfdOX3R",
-   "wk": "qVD3EEWRAcuVbS0x9WMIs7zuQoFrN+xmSbBeIkatfqI6xHX9yEgHkgSOlEHC9WTp",
-   "role": "user",
-   "exp": "2026-12-31",
-   "n": "s5vT5Ng58pfAsVoJ.yF3C9NYpySJJSWuAfwHUEgk/jcQ9fejlXHmiDy8=",
-   "created": "2026-11-08",
-   "start": ""
   }
  ],
- "rev": 1
+ "rev": 3
 }
