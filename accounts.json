@@ -1,8 +1,13 @@
 {
  "app": "ag-spray",
  "v": 1,
- "updated": "2026-11-08T10:15:23Z",
- "contact": {},
+ "updated": "2026-11-08T10:16:27Z",
+ "contact": {
+  "name": "曾義昌",
+  "line": "SAMCERAMIC",
+  "phone": "0982296722",
+  "email": "T610JACKY011@gmail.COM"
+ },
  "accounts": [
   {
    "id": "a105f7bf24bed690c10a91c77c405017dc1c9cee1cb8b89299f18e49208dba27",
@@ -57,7 +62,7 @@
    "fn": "ggtWETJnNNjjE7rn.8L/0zCoxe4+Irmaq+lBDoTrmesIW9w=="
   }
  ],
- "rev": 7,
+ "rev": 8,
  "cwa": "CSNBJAvVJ8CUP76/.OikahvtwENbXhpChfIfoICUyR6v3mqLXsiio41j5Umzl6SEuSo+N4GGP+c87CgKDlkFbQFg7F7w=",
  "sheet": {
   "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
