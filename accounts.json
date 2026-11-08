@@ -1,7 +1,7 @@
 {
  "app": "ag-spray",
  "v": 1,
- "updated": "2026-11-08T10:27:44Z",
+ "updated": "2026-11-08T10:27:56Z",
  "contact": {
   "name": "曾義昌",
   "line": "SAMCERAMIC",
@@ -75,11 +75,11 @@
    "fn": "iRcgQ4LjBOrvqDLp.uFtYDiU4y1SUGzB7axKZwPkfYjdrlHx4s5Epucg="
   }
  ],
- "rev": 10,
+ "rev": 11,
  "cwa": "CSNBJAvVJ8CUP76/.OikahvtwENbXhpChfIfoICUyR6v3mqLXsiio41j5Umzl6SEuSo+N4GGP+c87CgKDlkFbQFg7F7w=",
  "sheet": {
-  "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
-  "sk": "ON+tXSwgvwJOefVV.uNVFDcdGWHEp6sGA7EQWa/1bW/NsAq3nJaUAVUMDdGWGUOrhLUE/j8Qt8N2URlOJFCJwp2lH3zD4wgHK",
+  "url": "https://script.google.com/macros/s/AKfycbyylclKuzHxtekarkHnPowIBqY1-HUY3K3j0swgmNsbjiRmj0OTKMlb9gzvIslVk7hv/exec",
+  "sk": "7XRVA1OHXiiF0DhR.flv7nmo1ogMbYTgoRZtYdNpzmE2j24yKQKx9cnsPGaHVB3yw5J06Mm1WtmYYf4l1zIL2CQdLDCZlnk1b",
   "set": "2026-11-08"
  },
  "recovery": {
