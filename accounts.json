@@ -1,7 +1,7 @@
 {
  "app": "ag-spray",
  "v": 1,
- "updated": "2026-11-08T04:32:08Z",
+ "updated": "2026-11-08T04:43:12Z",
  "contact": {
   "name": "曾義昌",
   "line": "Samceramic",
@@ -48,13 +48,18 @@
    "fn": "0enesa/aC6PQE70h.ly5w4onwxaC/wcd1VzdFewlZWIM="
   }
  ],
- "rev": 9,
+ "rev": 10,
  "recovery": {
   "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
   "salt": "QZgYSUuzb0gkhiqUpYrD3w==",
   "iter": 100000,
   "iv": "ZtZUcVWsvcHT0x++",
   "wk": "dAZz3LLhTBfdJi6m9Hx9oYcb1N+8ePjizpIIQnvr9a6Ylg9u+lP9kDzjKghAK4rR",
+  "set": "2026-11-08"
+ },
+ "sheet": {
+  "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
+  "sk": "hk9jUiXmOOCeosaF.lCdd8tC73FKvupN2okdPKQJ2XOOiVoDPK9KLbQop8NV99rHS8f1PYMxH36BEoSjBYOvkVHy7+7lUNwOi",
   "set": "2026-11-08"
  }
 }
