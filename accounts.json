@@ -1,0 +1,51 @@
+{
+ "app": "ag-spray",
+ "v": 1,
+ "updated": "2026-11-08T09:12:45",
+ "accounts": [
+  {
+   "id": "a105f7bf24bed690c10a91c77c405017dc1c9cee1cb8b89299f18e49208dba27",
+   "salt": "lGLBHONzD2SHoue5VIWKCg==",
+   "iter": 210000,
+   "iv": "LwBzjpH8IajUTyER",
+   "wk": "dPTPgesQpjmQ0z+51nK/8NBxgwZpdlfolhZHZo2L6LTnOmbLOeDDgmB3TAIPiEge",
+   "role": "admin",
+   "exp": "",
+   "n": "dp0NwrBmTIUmAJBG.Qf5OYEGhxNTDHGTkxTN4H/b8qmZb",
+   "created": "2026-11-08"
+  },
+  {
+   "id": "ce7d5de982dc8d089eaba8a3529bb27c78fbd7412ca6d3acd3fe61aeee30f3da",
+   "salt": "7meOTi4LeXsFfV55HvAIBg==",
+   "iter": 210000,
+   "iv": "8+ccxMC47FN2BmpR",
+   "wk": "h0AOVkk3JPDMoy1mTAfae2WVbLrm8UZqwExtkxzF9smcOEGJZvmtQSd42vbL/pKR",
+   "role": "user",
+   "exp": "2026-12-31",
+   "n": "7bJmjjwHPXhXLdWA.tmvogNalAb4bGHLKWhoAxomatJmBVA==",
+   "created": "2026-11-08"
+  },
+  {
+   "id": "7dd21734533110f9d47b6c03d096a992cc4d9fbbef053cb09505244b6b59cf25",
+   "salt": "N2UcHWvfGnvdO7/abEdmPw==",
+   "iter": 210000,
+   "iv": "BDEq8BsTs2bY6xVa",
+   "wk": "5lZM2Y9vCyTve4QDHvMoCF4+CGKHawY0jDEmrGM7vnhKT/EPfHO3pXrjpAvFeGMn",
+   "role": "user",
+   "exp": "2026-12-31",
+   "n": "p0F/IXuWrsJouzWW.lrCVDaBZgsv4eThl2Vm6M6DVtVc2GA==",
+   "created": "2026-11-08"
+  },
+  {
+   "id": "cfae491fb0f80a9376d6a6483afdffdfe75f3bdebd5ed898551810f59ca15ce2",
+   "salt": "NUgrGVwOFZfsNcXCkYLpVQ==",
+   "iter": 210000,
+   "iv": "HEh05QDb3VvOtcMa",
+   "wk": "9yyjmrAb3aFfT7PAd1orzPCA6aj+ak/UCpmjMJir38CJhSDFD8kxcpRrkUMyAgr/",
+   "role": "user",
+   "exp": "2026-12-31",
+   "n": "Ha50uPUT9rmU0ePa.tWC6hevjhYs6Lqf4IsiEnipQeD27mQ==",
+   "created": "2026-11-08"
+  }
+ ]
+}

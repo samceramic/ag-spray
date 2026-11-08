@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>農噴測量安裝說明</title>
+<style>
+:root{--bg:#f4f7f5;--fg:#1c2420;--muted:#5d6b63;--line:#d6ddd8;--accent:#127852;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1412;--fg:#e7eee9;--muted:#9aa8a0;--line:#2c3833;--accent:#3fc38c;--card:#18201c}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 "Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px max(16px,env(safe-area-inset-left)) 48px}
+h1{font-size:1.6rem;margin:0 0 4px}
+h2{font-size:1.2rem;margin:32px 0 8px;padding-top:12px;border-top:2px solid var(--accent)}
+h3{font-size:1.02rem;margin:20px 0 6px}
+p.lead{color:var(--muted);margin:0 0 16px}
+ol,ul{padding-left:1.4em}
+li{margin:4px 0}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.92em;word-break:break-all}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600}
+.wrap{overflow-x:auto}
+</style>
+</head>
+<body>
+<main>
+<h1>農噴測量 安裝與雲端設定</h1>
+<p class="lead">把工具放上網址、安裝到 Android 和 iPhone 主畫面，並設定雲端備份。</p>
+
+<div class="wrap"><table>
+<tr><th>存檔方式</th><th>需要設定</th><th>適合</th></tr>
+<tr><td>手機本機（安裝成 App）</td><td>放上網址後安裝一次</td><td>每天使用，離線也能開啟</td></tr>
+<tr><td>備份檔 → iCloud／Google 雲端硬碟／LINE</td><td>不需要</td><td>每週手動備份、換手機</td></tr>
+<tr><td>Google 雲端硬碟自動同步</td><td>申請一次 Google 用戶端 ID</td><td>多支手機、多位飛手共用紀錄</td></tr>
+</table></div>
+
+<h2>一、把工具放上網址（GitHub Pages，免費）</h2>
+<p>手機直接開啟 .html 檔時，瀏覽器可能清除紀錄，也無法安裝或分享，所以要先放到一個 https 網址上。</p>
+<ol>
+<li>到 <code>github.com</code> 註冊帳號（例如帳號叫 <code>farmpilot</code>）。</li>
+<li>右上角「＋」→「New repository」，名稱填 <code>ag-spray</code>，選 <b>Public</b>，按「Create repository」。</li>
+<li>在新頁面點「uploading an existing file」，把這個資料夾裡的<b>所有檔案</b>（先解壓縮，不要上傳 zip 本身）拖進去，按「Commit changes」。</li>
+<li>到「Settings」→ 左側「Pages」→ Source 選「Deploy from a branch」，Branch 選 <code>main</code>、資料夾 <code>/ (root)</code>，按「Save」。</li>
+<li>約 1～2 分鐘後，網址會是 <code>https://farmpilot.github.io/ag-spray/</code>（換成你的帳號）。</li>
+</ol>
+<div class="card">紀錄只存在每支手機或你的 Google 雲端硬碟，<b>不會</b>上傳到 GitHub。別人知道網址只能使用工具，看不到你的資料。</div>
+<p>之後若有新版本，只要在同一個 repository 再上傳新的 <code>index.html</code> 覆蓋即可，手機下次開啟會自動更新。</p>
+
+<h2>二、安裝到手機主畫面</h2>
+<h3>Android</h3>
+<ol>
+<li>用 <b>Chrome</b> 開啟上面的網址。</li>
+<li>點右上角雲朵圖示 →「安裝到主畫面」；或點 Chrome 的「⋮」→「安裝應用程式」。</li>
+<li>從主畫面的「農噴測量」圖示開啟。</li>
+</ol>
+<h3>iPhone／iPad</h3>
+<ol>
+<li>一定要用 <b>Safari</b> 開啟網址。</li>
+<li>點下方「分享」按鈕 →「加入主畫面」→「新增」。</li>
+<li>之後都從主畫面的「農噴測量」圖示開啟。</li>
+</ol>
+<div class="card">iPhone 若沒有加入主畫面，Safari 可能在 7 天沒開啟後自動清除網頁資料。加入主畫面後就不受這個限制。</div>
+
+<h2>三、備份檔（不需設定）</h2>
+<ol>
+<li>點右側雲朵圖示 →「分享備份檔」。</li>
+<li><b>iPhone</b>：選「儲存到檔案」→「iCloud 雲端硬碟」→ 選資料夾 →「儲存」。</li>
+<li><b>Android</b>：選「雲端硬碟」上傳，或選「儲存到裝置」。也可以傳到自己的 LINE（Keep 筆記）。</li>
+<li>換手機或資料遺失時：雲朵圖示 →「從備份檔還原」→ 選擇備份檔。</li>
+</ol>
+<p>還原時會<b>合併</b>而不是覆蓋：同一筆紀錄以最後修改時間較新的為準，手機上較新的紀錄不會被舊備份蓋掉。超過 7 天沒備份時，雲朵圖示會出現橘點提醒。</p>
+
+<h2>四、Google 雲端硬碟自動同步（選用）</h2>
+<p>需要先向 Google 申請一組「OAuth 用戶端 ID」，只要做一次，所有手機都用同一組。</p>
+<ol>
+<li>到 <code>console.cloud.google.com</code>，用你的 Gmail 登入，建立一個新專案（例如「農噴測量」）。</li>
+<li>左側選單「API 和服務」→「程式庫」→ 搜尋 <b>Google Drive API</b> →「啟用」。</li>
+<li>左側「Google Auth Platform」（或「OAuth 同意畫面」）→「開始使用」：填應用程式名稱與聯絡信箱，目標對象選「<b>外部</b>」。</li>
+<li>「目標對象」→「測試使用者」→ 新增要使用同步的 Gmail（自己和其他飛手）。</li>
+<li>「用戶端」→「建立用戶端」→ 類型選「<b>網頁應用程式</b>」→「已授權的 JavaScript 來源」新增 <code>https://farmpilot.github.io</code>（換成你的帳號，<b>不要</b>加 /ag-spray）→「建立」。</li>
+<li>複製畫面上的用戶端 ID（結尾是 <code>.apps.googleusercontent.com</code>）。</li>
+<li>在工具中點雲朵圖示 → 貼上「OAuth 用戶端 ID」→「立即同步」→ 登入 Google 並允許。</li>
+</ol>
+<div class="card">
+<b>登入時出現「Google 尚未驗證這個應用程式」</b>是正常的（因為是你自己建立的），點「繼續」即可。<br>
+同步檔會出現在你的 Google 雲端硬碟，名稱是「農噴紀錄_雲端同步.json」。工具只能存取這個檔案，看不到你雲端硬碟裡的其他資料。
+</div>
+<h3>多支手機共用</h3>
+<ul>
+<li>每支手機都貼上同一組用戶端 ID，並登入<b>同一個 Google 帳號</b>。</li>
+<li>勾選「儲存紀錄後自動同步」，每次儲存就會上傳。若登入逾時（約 1 小時），雲朵圖示會出現橘點，點「立即同步」即可。</li>
+<li>兩支手機若用了同一個作業序號，同步後會提醒，請到歷史紀錄修改其中一筆。</li>
+</ul>
+
+<h2>五、帳號與登入</h2>
+<div class="wrap"><table>
+<tr><th>身分</th><th>可以使用</th></tr>
+<tr><td>未登入（一般使用者）</td><td>定位、新增目標田區（點選、數字加點、繞行記錄）、面積換算</td></tr>
+<tr><td>一般帳號</td><td>以上全部，加上無人機噴藥試算、配藥、空域判定、作業紀錄、匯出 Excel、雲端備份</td></tr>
+<tr><td>管理員</td><td>以上全部，加上新增、刪除帳號與重設密碼</td></tr>
+</table></div>
+<h3>新增或停用帳號</h3>
+<ol>
+<li>用管理員帳號登入 → 點「新增目標田區」圖示 →「帳號管理」（或雲朵圖示 →「開啟帳號管理」）。</li>
+<li>輸入新帳號，按「自動產生」建立密碼，選權限。</li>
+<li>設定<b>使用期間</b>：點「7 天／14 天／30 天／90 天／1 年／不限」快速設定，或直接改開始日、到期日。開始日之前、到期日之後都無法登入。</li>
+<li>按「新增帳號」→「複製帳號資訊」用 LINE 傳給飛手。</li>
+<li>已建立的帳號可按「修改期間」延長或縮短，不必重設密碼；忘記密碼按「重設密碼」；要停用就按「刪除」。</li>
+<li>改完後按「<b>匯出 accounts.json</b>」，到 GitHub 的 repository 點「Add file」→「Upload files」，上傳並取代原本的 <code>accounts.json</code>。</li>
+<li>其他手機下次開啟（有網路時）就會套用：被刪除或到期的帳號會自動登出。</li>
+</ol>
+<div class="card">
+<b>安全性說明</b><br>
+進階功能的程式已加密，沒有正確帳號密碼就無法解開，即使懂網頁的人查看原始碼也拿不到。<br>
+限制：工具沒有伺服器，所以帳號停用要等那支手機<b>下次連網開啟</b>才生效；離線期間仍可使用。若懷疑曾登入過的人外流了內容，可請我用新的金鑰重新產生一版並重設所有帳號。<br>
+<b>帳號密碼清單不要上傳到 GitHub。</b> 管理員密碼請妥善保管，日後更新版本時需要用它。
+</div>
+
+<h2>常見問題</h2>
+<ul>
+<li><b>沒有網路時可以用嗎？</b> 安裝後可離線開啟、計算與儲存紀錄；衛星底圖與雲端同步需要網路。</li>
+<li><b>換新手機怎麼辦？</b> 舊手機先備份或同步，新手機安裝後「從備份檔還原」或「立即同步」。</li>
+<li><b>刪除 App 會怎樣？</b> 手機上的紀錄會一起刪除，請先確認已備份或同步。</li>
+</ul>
+</main>
+</body>
+</html>
