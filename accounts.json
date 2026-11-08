@@ -1,7 +1,7 @@
 {
  "app": "ag-spray",
  "v": 1,
- "updated": "2026-11-08T04:56:03Z",
+ "updated": "2026-11-08T04:56:29Z",
  "contact": {},
  "accounts": [
   {
@@ -17,5 +17,18 @@
    "start": ""
   }
  ],
- "rev": 4
+ "rev": 6,
+ "sheet": {
+  "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
+  "sk": "B0CKqWXxJ/gTUFDC.QUv3GDLxuSTQDr868BH386Fc1zGS3VR6G98KqKyLqwvKX8dPtFVOpD0gP/gCZO8BUChm8Xwdb37JUMFZ",
+  "set": "2026-11-08"
+ },
+ "recovery": {
+  "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
+  "salt": "BBTjfIJcKK2uzkspjl0PQQ==",
+  "iter": 100000,
+  "iv": "lF36uWk31A4N1uyb",
+  "wk": "UnS7D+ep5NF3mFLwX0KEmjXOKYMNj8l42+IWR+ta1m+buCI13imBTRQ6avJj2tgs",
+  "set": "2026-11-08"
+ }
 }
