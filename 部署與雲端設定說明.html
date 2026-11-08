@@ -32,7 +32,7 @@ th{color:var(--muted);font-weight:600}
 <tr><th>存檔方式</th><th>需要設定</th><th>適合</th></tr>
 <tr><td>手機本機（安裝成 App）</td><td>放上網址後安裝一次</td><td>每天使用，離線也能開啟</td></tr>
 <tr><td>備份檔 → iCloud／Google 雲端硬碟／LINE</td><td>不需要</td><td>每週手動備份、換手機</td></tr>
-<tr><td>Google 雲端硬碟自動同步</td><td>申請一次 Google 用戶端 ID</td><td>多支手機、多位飛手共用紀錄</td></tr>
+<tr><td>Google 試算表同步</td><td>管理員設定一次 Apps Script</td><td>多位飛手的紀錄集中到一份試算表</td></tr>
 </table></div>
 
 <h2>一、把工具放上網址（GitHub Pages，免費）</h2>
@@ -44,7 +44,7 @@ th{color:var(--muted);font-weight:600}
 <li>到「Settings」→ 左側「Pages」→ Source 選「Deploy from a branch」，Branch 選 <code>main</code>、資料夾 <code>/ (root)</code>，按「Save」。</li>
 <li>約 1～2 分鐘後，網址會是 <code>https://farmpilot.github.io/ag-spray/</code>（換成你的帳號）。</li>
 </ol>
-<div class="card">紀錄只存在每支手機或你的 Google 雲端硬碟，<b>不會</b>上傳到 GitHub。別人知道網址只能使用工具，看不到你的資料。</div>
+<div class="card">紀錄只存在每支手機或管理員的 Google 試算表，<b>不會</b>上傳到 GitHub。別人知道網址只能使用工具，看不到你的資料。</div>
 <p>之後若有新版本，只要在同一個 repository 再上傳新的 <code>index.html</code> 覆蓋即可，手機下次開啟會自動更新。</p>
 
 <h2>二、安裝到手機主畫面</h2>
@@ -71,27 +71,22 @@ th{color:var(--muted);font-weight:600}
 </ol>
 <p>還原時會<b>合併</b>而不是覆蓋：同一筆紀錄以最後修改時間較新的為準，手機上較新的紀錄不會被舊備份蓋掉。超過 7 天沒備份時，雲朵圖示會出現橘點提醒。</p>
 
-<h2>四、Google 雲端硬碟自動同步（選用）</h2>
-<p>需要先向 Google 申請一組「OAuth 用戶端 ID」，只要做一次，所有手機都用同一組。</p>
+<h2>四、Google 試算表同步（建議）</h2>
+<p>所有人的噴藥紀錄會自動寫入管理員的 Google 試算表，一筆一列，可以直接篩選、加總、列印。<b>使用者不需要登入 Google</b>，也不用加入測試使用者。</p>
 <ol>
-<li>到 <code>console.cloud.google.com</code>，用你的 Gmail 登入，建立一個新專案（例如「農噴測量」）。</li>
-<li>左側選單「API 和服務」→「程式庫」→ 搜尋 <b>Google Drive API</b> →「啟用」。</li>
-<li>左側「Google Auth Platform」（或「OAuth 同意畫面」）→「開始使用」：填應用程式名稱與聯絡信箱，目標對象選「<b>外部</b>」。</li>
-<li>「目標對象」→「測試使用者」→ 新增要使用同步的 Gmail（自己和其他飛手）。</li>
-<li>「用戶端」→「建立用戶端」→ 類型選「<b>網頁應用程式</b>」→「已授權的 JavaScript 來源」新增 <code>https://farmpilot.github.io</code>（換成你的帳號，<b>不要</b>加 /ag-spray）→「建立」。</li>
-<li>複製畫面上的用戶端 ID（結尾是 <code>.apps.googleusercontent.com</code>）。</li>
-<li>在工具中點雲朵圖示 → 貼上「OAuth 用戶端 ID」→「立即同步」→ 登入 Google 並允許。</li>
+<li>用管理員的 Gmail 到 Google 雲端硬碟 →「新增」→「Google 試算表」，命名例如「農噴作業紀錄」。</li>
+<li>試算表上方選單「<b>擴充功能</b>」→「<b>Apps Script</b>」。</li>
+<li>刪掉預設內容，貼上「<b>農噴測量_雲端試算表_AppsScript.gs</b>」的全部內容，把 <code>your-name@gmail.com</code> 改成管理員 Email →「儲存」。</li>
+<li>右上「部署」→「新增部署作業」→ 齒輪選「網頁應用程式」→ 執行身分「<b>我</b>」、誰可以存取「<b>所有人</b>」→「部署」→ 依畫面授權（出現「Google 尚未驗證」點「進階」→「前往」）。</li>
+<li>複製「網頁應用程式」網址（結尾 <code>/exec</code>）。</li>
+<li>App 用 admin 登入 →「帳號管理」→「Google 試算表同步」貼上網址 →「連結試算表」。有設定「同步到網站」會自動上傳設定；沒有的話請匯出 accounts.json 上傳。</li>
+<li>同一個網址也能用於「管理員忘記密碼」：按「同一個網址也用於 Email 驗證」→「連結並啟用」。</li>
 </ol>
 <div class="card">
-<b>登入時出現「Google 尚未驗證這個應用程式」</b>是正常的（因為是你自己建立的），點「繼續」即可。<br>
-同步檔會出現在你的 Google 雲端硬碟，名稱是「農噴紀錄_雲端同步.json」。工具只能存取這個檔案，看不到你雲端硬碟裡的其他資料。
+同步時機：儲存或刪除紀錄後、開啟 App 時自動同步；沒有網路時會記下來，連上網路再補傳。也可以在雲朵圖示裡按「立即同步」。<br>
+一般帳號只會上傳、取回自己的紀錄；管理員會取回所有人的。換手機時登入同一個帳號，紀錄會自動回來。<br>
+請在 App 裡修改紀錄。直接改試算表儲存格不會傳回 App；最後一欄「資料(JSON)」是 App 用的，請勿修改或刪除。刪除的紀錄在試算表會標示「已刪除」。
 </div>
-<h3>多支手機共用</h3>
-<ul>
-<li>每支手機都貼上同一組用戶端 ID，並登入<b>同一個 Google 帳號</b>。</li>
-<li>勾選「儲存紀錄後自動同步」，每次儲存就會上傳。若登入逾時（約 1 小時），雲朵圖示會出現橘點，點「立即同步」即可。</li>
-<li>兩支手機若用了同一個作業序號，同步後會提醒，請到歷史紀錄修改其中一筆。</li>
-</ul>
 
 <h2>五、帳號與登入</h2>
 <div class="wrap"><table>
@@ -125,7 +120,7 @@ th{color:var(--muted);font-weight:600}
 <h3>管理員忘記密碼（Email 驗證）</h3>
 <ol>
 <li>打開 <code>script.google.com</code>（用要收驗證碼的 Gmail 登入）→「新專案」。</li>
-<li>刪掉預設內容，貼上「管理員Email驗證_AppsScript.gs」的全部內容，把第 8 行的 <code>your-name@gmail.com</code> 改成你的 Email →「儲存」。</li>
+<li>刪掉預設內容，貼上「農噴測量_雲端試算表_AppsScript.gs」的全部內容（已包含 Email 驗證；若第四節已部署過，直接用同一個網址即可），把 <code>your-name@gmail.com</code> 改成你的 Email →「儲存」。</li>
 <li>右上角「部署」→「新增部署作業」→ 齒輪選「網頁應用程式」→ 執行身分「<b>我</b>」、誰可以存取「<b>所有人</b>」→「部署」→ 依畫面授權（出現「Google 尚未驗證」時點「進階」→「前往」）。</li>
 <li>複製「網頁應用程式」網址（結尾是 <code>/exec</code>）。</li>
 <li>App 用 admin 登入 →「帳號管理」→「管理員忘記密碼」貼上網址 →「連結並啟用」。看到「已啟用：驗證碼會寄到 ...」就完成了。</li>

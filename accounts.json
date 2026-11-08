@@ -1,13 +1,8 @@
 {
  "app": "ag-spray",
  "v": 1,
- "updated": "2026-11-08T04:43:12Z",
- "contact": {
-  "name": "曾義昌",
-  "line": "Samceramic",
-  "phone": "0982296722",
-  "email": "t610jacky011@gmail.com"
- },
+ "updated": "2026-11-08T03:16:25Z",
+ "contact": {},
  "accounts": [
   {
    "id": "a105f7bf24bed690c10a91c77c405017dc1c9cee1cb8b89299f18e49208dba27",
@@ -19,8 +14,7 @@
    "exp": "",
    "n": "/ywqbSiv9/Moeo0m.F9Z6iOzmVj9rTTkYNyDQ3YjSQFfG",
    "created": "2026-11-08",
-   "start": "",
-   "fn": "yBf+GDioQxJGXyTo.8CwsQx8W+KUsFKCM2wJb1YzPUwxzlB6mnw=="
+   "start": ""
   },
   {
    "id": "99d6e56861d15224d4a6de54db7e6c2110c4bc729282ac1880c0f84edb4ce645",
@@ -35,31 +29,29 @@
    "start": ""
   },
   {
-   "id": "6d33d59fc5a60be4ecf4487c754c0af18c8627869f77c534a3d615617a8fea87",
-   "salt": "CLmIPVWwJxfLCUSBz307xg==",
+   "id": "2798790bba9c6abbfae769915a447238094ff61787b7f8d70cb03a4147bdb2b9",
+   "salt": "iPRrhXp5KRVytYeA0SMJtA==",
    "iter": 210000,
-   "iv": "AFLTNDKOLkm0lTFX",
-   "wk": "tA4OZvatbEW7llQ/f0HqvgT/JQ29lAKdfDR4bQlYXLRAR4/WHlXTdH283S6Uk02+",
+   "iv": "myAXYXSUhFdS/2Wf",
+   "wk": "miAaHvs/Lj4AQLx/LizekNXdDssFd4sj/CCssKDO4E8s24rfV4udJOOKWO3M6ARi",
    "role": "user",
-   "exp": "2026-11-14",
-   "n": "xkr24akfBr3o5fcC.IMGGqVJBdkWaulX0zdYRFBspcC7ic5A=",
+   "exp": "2026-12-31",
+   "n": "jPu3e9TWlvgNtVYH.JGZD/NNIeaRPRsrbbXISCqIbFUL196GBy7MzKAs=",
    "created": "2026-11-08",
-   "start": "2026-11-08",
-   "fn": "0enesa/aC6PQE70h.ly5w4onwxaC/wcd1VzdFewlZWIM="
+   "start": ""
+  },
+  {
+   "id": "bf9306df0db7a4b2e38fd353a0fba5b9c8daada160172ebd7566586beae65fd7",
+   "salt": "R/W/Tegd+B2eFm+b8UGRDQ==",
+   "iter": 210000,
+   "iv": "GquMHgtWGTfdOX3R",
+   "wk": "qVD3EEWRAcuVbS0x9WMIs7zuQoFrN+xmSbBeIkatfqI6xHX9yEgHkgSOlEHC9WTp",
+   "role": "user",
+   "exp": "2026-12-31",
+   "n": "s5vT5Ng58pfAsVoJ.yF3C9NYpySJJSWuAfwHUEgk/jcQ9fejlXHmiDy8=",
+   "created": "2026-11-08",
+   "start": ""
   }
  ],
- "rev": 10,
- "recovery": {
-  "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
-  "salt": "QZgYSUuzb0gkhiqUpYrD3w==",
-  "iter": 100000,
-  "iv": "ZtZUcVWsvcHT0x++",
-  "wk": "dAZz3LLhTBfdJi6m9Hx9oYcb1N+8ePjizpIIQnvr9a6Ylg9u+lP9kDzjKghAK4rR",
-  "set": "2026-11-08"
- },
- "sheet": {
-  "url": "https://script.google.com/macros/s/AKfycbzD9SFC76gM3YxkAN1tVPnPQhfqOXsvsdUPmRBbOSstLuc50gvdDxKi1jZJPyN4KbtQ/exec",
-  "sk": "hk9jUiXmOOCeosaF.lCdd8tC73FKvupN2okdPKQJ2XOOiVoDPK9KLbQop8NV99rHS8f1PYMxH36BEoSjBYOvkVHy7+7lUNwOi",
-  "set": "2026-11-08"
- }
+ "rev": 1
 }
