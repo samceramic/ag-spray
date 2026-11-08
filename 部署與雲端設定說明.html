@@ -110,6 +110,14 @@ th{color:var(--muted);font-weight:600}
 <li>改完後按「<b>匯出 accounts.json</b>」，到 GitHub 的 repository 點「Add file」→「Upload files」，上傳並取代原本的 <code>accounts.json</code>。</li>
 <li>其他手機下次開啟（有網路時）就會套用：被刪除或到期的帳號會自動登出。</li>
 </ol>
+<h3>忘記密碼、申請新帳號</h3>
+<ol>
+<li>管理員先到「帳號管理」→「管理員聯絡方式」，填顯示名稱、LINE ID、手機或 Email →「儲存聯絡方式」→ 匯出並上傳 accounts.json。</li>
+<li>使用者在登入畫面點「忘記密碼」或「申請新帳號」，填帳號、姓名、電話，按「用 LINE 傳給管理員」（或簡訊、Email），在 LINE 選管理員的聊天室送出。</li>
+<li>管理員收到後：忘記密碼 → 在帳號清單按「重設密碼」；申請帳號 → 用「新增帳號」建立並設定使用期間。再按「複製帳號資訊」傳回給使用者，最後匯出並上傳 accounts.json。</li>
+</ol>
+<p>聯絡方式會放在公開的 accounts.json，請只填可以公開的電話或 Email。帳號可使用中文，例如「使用者04」。</p>
+
 <div class="card">
 <b>安全性說明</b><br>
 進階功能的程式已加密，沒有正確帳號密碼就無法解開，即使懂網頁的人查看原始碼也拿不到。<br>
